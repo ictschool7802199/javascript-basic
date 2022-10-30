@@ -33,6 +33,21 @@ let cars = [
     color: "silver",
     status: true,
   },
+  {
+    name: "Honda jazz",
+    horsePower: 200,
+    year: 2022,
+    color: "pink",
+    status: true,
+  },
 ];
 
-console.log(cars[0]);
+let showRoom = [];
+for (index = 0; index < cars.length; index++) {
+  if (cars[index].year > 2000) {
+    showRoom.push(cars[index]);
+  }
+}
+
+// console.log(cars[0]);
+console.log(showRoom);
